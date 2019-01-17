@@ -18,7 +18,7 @@
       <title>CSS Styles Demo</title>
       <link href="wm_reset.css" rel="stylesheet" />      
       <link href="wm_styles.css" rel="stylesheet" />  
-      <link rel="stylesheet" href="wm_forms.css">   
+      <link rel="stylesheet" href="wm_forms.css" />
       <script src="wm_script.js"></script>
    </head>
 
@@ -72,7 +72,144 @@
          <h1>CSS Demo</h1>
           <!-- This form does not have a method or a place for the data to be sent.-->
          <form>
+            <label for="sampleBox"></label>
+            <textarea name="sampleText" id="sampleBox" placeholder="Enter sample text and press the tab key" autofocus tabindex="1" wrap="hard"></textarea>
 
+            <p>Select the css style values from the form below and preview the effect on the sample text in the preview box.</p>
+            <fieldset>
+                <legend>Fonts</legend>
+
+                <!-- The optgroup tag makes a Sub header wihthin the list so that the user know that the slection fall under two(or more) categories. -->
+                <div class="fonts">
+                    <label for="fonts">Fonts</label>
+                    <select name="fontfamily" id="fonts">
+                        <optgroup label="generic" id="generic">
+                            <option value="default">default</option>
+                            <option value="serif">serif</option>
+                            <option value="sans-serif">sans-serif</option>
+                            <option value="monospace">monospace</option>
+                            <option value="cursive">cursive</option>
+                            <option value="fantasy">fantasy</option>
+                        </optgroup>
+                        <optgroup label="specific" id="specific">
+                            <option value="Arial">Arial</option>
+                            <option value="'Book Antiqua'">'Book Antiqua'</option>
+                            <option value="'Courier New'">'Courier New'</option>
+                            <option value="Geneva">Geneva</option>
+                            <option value="Helvetica">Helvetica</option>
+                            <option value="Impact">Impact</option>
+                            <option value="Palatino">Palatino</option>
+                            <option value="Tohoma">Tohoma</option>
+                            <option value="'Times New Roman'">'Times New Roman'</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <!-- I chose the following id's because the are shoten versionls of the label text or slections list that I will easily remember. -->
+                <div class="fonts">
+                    <label for="fStyle">Font Style</label>
+                    <select name="fontStyle" id="fStyle">
+                        <option value="normal">normal</option>
+                        <option value="italic">italic</option>
+                        <option value="oblique">oblique</option>
+                    </select>
+                </div>
+
+                <div class="fonts">
+                    <label for="fWeight">Font Weight</label>
+                    <select name="fontWeight" id="fWeight">
+                        <option value="normal">normal</option>
+                        <option value="bold">bold</option>
+                    </select>
+                </div>
+                
+
+
+                <div class="fonts">
+                    <label for="tDec">Text Decoration</label>
+                    <select name="textDec" id="tDec">
+                        <option value="none">none</option>
+                        <option value="line-through">line-through</option>
+                        <option value="overline">overline</option>
+                        <option value="underline">underline</option>
+                    </select>
+                </div>
+                
+                <div class="">
+                    <label for="tTran">Text Transform</label>
+                    <select name="textTran" id="tTran">
+                        <option value="none">none</option>
+                        <option value="captialize">captialize</option>
+                        <option value="lowercase">lowercase</option>
+                        <option value="uppercase">uppercase</option>
+                    </select>
+                </div>
+
+                <div class="">
+                    <label for="fVar">Font Variant</label>
+                    <select name="variant" id="fVar">
+                        <option value="normal">normal</option>
+                        <option value="small-caps">small-caps</option>
+                    </select>
+                </div>
+                
+            </fieldset>
+
+            <!-- Here the user chooses what color the text will be. The type "color" allows the user to pick a color on a color wheel provided by the browser. -->
+            <fieldset>
+                <legend>Colors</legend>
+
+                <div class="color">
+                    <label for="color">Font Colors (hexadecimal)</label>
+                    <input type="color" name="color" id="color" value="#000000"/> 
+                </div>
+                
+                <div class="color">
+                    <label for="backgroundcolor">Background Color (hexadecimal)</label>
+                    <input type="color" name="backgroundcolor" id="backgroundcolor" placeholder="#rrggbb" value="#FFFFFF" />
+                </div>
+            </fieldset>
+
+            <!-- This fieldset allows the user to change the size of various aspects of the text thorught the use of a slidebar. The type "range" creats a slide bar for the user to use,  with the set limits stated before and after the input tags. -->
+            <fieldset>
+                <legend>Size</legend>
+
+                <div class="slider">
+                    <label for="fontsize">Font Size</label>
+                    8
+                    <input type="range" id="fontsize" name="fontsize" min="8" max="40" value="14" step="1" />
+                    40
+                </div>
+
+                <div class="slider">
+                    <label for="lSpacing">Letter Spacing</label>
+                    0
+                    <input type="range" id="lSpacing" name="lSpacing" min="0" max="10" value="10" step="1" />
+                    10
+                </div>
+
+                <div class="slider">
+                    <label for="wSpacing">Word Spacing</label>
+                    0
+                    <input type="range" id="wSpacing" name="wSpacing" min="0" max="10" value="0" step="1" />
+                    10
+                </div>
+
+                <div class="slider">
+                    <label for="lHeight">Line Height (px)</label>
+                    0
+                    <input type="range" id="lHeight" name="lHeight" min="0" max="10" value="1" step="0.2" />
+                    4
+                </div>
+   
+                <div class="slider">
+                    <label for="tIndent">Text Index (px)</label>
+                    0
+                    <input type="range" id="tIndent" name="tIndent" min="0" max="10" value="0" step="1" />
+                    10
+
+                </div>
+
+            </fieldset>
          </form>
 
          <h2>Rendered Text</h2>

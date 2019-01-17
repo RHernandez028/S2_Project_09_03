@@ -14,12 +14,26 @@
 */
 
 /* Field Set Styles */
+fieldset {
+    border: none;
+    width: 60%;
+    margin: 10px 0px;
+}
 
+legend {
+    background-color: rgb(232, 232, 232);
+    width: 100%;
+    margin: 2px 0px; 
+}
 
 
 
 /* DIV Styles */
-
+div.slider {
+    float: left;
+    width: 60%;
+    margin: 2px 0px;
+}
 
 
 
