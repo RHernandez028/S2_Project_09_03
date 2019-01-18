@@ -38,10 +38,27 @@ div.slider {
 
 
 /* Control Styles */
+label {
+    clear: left;
+    float: left;
+    display: block;
+    width: 40%;
+    margin: 2px 0px;
+}
 
+input, select {
+    margin: 2px 0px;
+}
 
+input[type="range"] {
+    width: 60%;
+}
 
-
+select {
+    display: block;
+    float: left;
+    width: 120px;
+}
 /* Placeholder Styles */
 
 

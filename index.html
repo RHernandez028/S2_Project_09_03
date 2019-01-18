@@ -81,8 +81,8 @@
 
                 <!-- The optgroup tag makes a Sub header wihthin the list so that the user know that the slection fall under two(or more) categories. -->
                 <div class="fonts">
-                    <label for="fonts">Fonts</label>
-                    <select name="fontfamily" id="fonts">
+                    <label for="fontFamily">Fonts</label>
+                    <select name="fontfamily" id="fontFamily">
                         <optgroup label="generic" id="generic">
                             <option value="default">default</option>
                             <option value="serif">serif</option>
@@ -99,15 +99,15 @@
                             <option value="Helvetica">Helvetica</option>
                             <option value="Impact">Impact</option>
                             <option value="Palatino">Palatino</option>
-                            <option value="Tohoma">Tohoma</option>
+                            <option value="Tahoma">Tahoma</option>
                             <option value="'Times New Roman'">'Times New Roman'</option>
                         </optgroup>
                     </select>
                 </div>
-                <!-- I chose the following id's because the are shoten versionls of the label text or slections list that I will easily remember. -->
+    
                 <div class="fonts">
-                    <label for="fStyle">Font Style</label>
-                    <select name="fontStyle" id="fStyle">
+                    <label for="fontStyle">Font Style</label>
+                    <select name="fontstyle" id="fontStyle">
                         <option value="normal">normal</option>
                         <option value="italic">italic</option>
                         <option value="oblique">oblique</option>
@@ -115,8 +115,8 @@
                 </div>
 
                 <div class="fonts">
-                    <label for="fWeight">Font Weight</label>
-                    <select name="fontWeight" id="fWeight">
+                    <label for="fontWeight">Font Weight</label>
+                    <select name="fontweight" id="fontWeight">
                         <option value="normal">normal</option>
                         <option value="bold">bold</option>
                     </select>
@@ -125,8 +125,8 @@
 
 
                 <div class="fonts">
-                    <label for="tDec">Text Decoration</label>
-                    <select name="textDec" id="tDec">
+                    <label for="textDecoration">Text Decoration</label>
+                    <select name="textdecoration" id="textDecoration">
                         <option value="none">none</option>
                         <option value="line-through">line-through</option>
                         <option value="overline">overline</option>
@@ -134,9 +134,9 @@
                     </select>
                 </div>
                 
-                <div class="">
-                    <label for="tTran">Text Transform</label>
-                    <select name="textTran" id="tTran">
+                <div class="fonts">
+                    <label for="textTransform">Text Transform</label>
+                    <select name="texttransform" id="textTransform">
                         <option value="none">none</option>
                         <option value="captialize">captialize</option>
                         <option value="lowercase">lowercase</option>
@@ -144,9 +144,9 @@
                     </select>
                 </div>
 
-                <div class="">
-                    <label for="fVar">Font Variant</label>
-                    <select name="variant" id="fVar">
+                <div class="fonts">
+                    <label for="fontVariant">Font Variant</label>
+                    <select name="fontvariant" id="fontVariant">
                         <option value="normal">normal</option>
                         <option value="small-caps">small-caps</option>
                     </select>
@@ -165,7 +165,7 @@
                 
                 <div class="color">
                     <label for="backgroundcolor">Background Color (hexadecimal)</label>
-                    <input type="color" name="backgroundcolor" id="backgroundcolor" placeholder="#rrggbb" value="#FFFFFF" />
+                    <input type="color" name="backgroundColor" id="backgroundcolor" placeholder="#rrggbb" value="#FFFFFF" />
                 </div>
             </fieldset>
 
@@ -174,37 +174,37 @@
                 <legend>Size</legend>
 
                 <div class="slider">
-                    <label for="fontsize">Font Size</label>
+                    <label for="fontSize">Font Size</label>
                     8
-                    <input type="range" id="fontsize" name="fontsize" min="8" max="40" value="14" step="1" />
+                    <input type="range" id="fontSize" name="fontsize" min="8" max="40" value="14" step="1" />
                     40
                 </div>
 
                 <div class="slider">
-                    <label for="lSpacing">Letter Spacing</label>
+                    <label for="letterSpacing">Letter Spacing</label>
                     0
-                    <input type="range" id="lSpacing" name="lSpacing" min="0" max="10" value="10" step="1" />
+                    <input type="range" id="letterSpacing" name="letterspacing" min="0" max="10" value="0" step="1" />
                     10
                 </div>
 
                 <div class="slider">
-                    <label for="wSpacing">Word Spacing</label>
+                    <label for="wordSpacing">Word Spacing</label>
                     0
-                    <input type="range" id="wSpacing" name="wSpacing" min="0" max="10" value="0" step="1" />
+                    <input type="range" id="wordSpacing" name="wordspacing" min="0" max="10" value="0" step="1" />
                     10
                 </div>
 
                 <div class="slider">
-                    <label for="lHeight">Line Height (px)</label>
+                    <label for="lineHeight">Line Height (em)</label>
                     0
-                    <input type="range" id="lHeight" name="lHeight" min="0" max="10" value="1" step="0.2" />
+                    <input type="range" id="lineHeight" name="lineheight" min="0" max="4" value="1" step="0.2" />
                     4
                 </div>
    
                 <div class="slider">
-                    <label for="tIndent">Text Index (px)</label>
+                    <label for="textIndent">Text Index (px)</label>
                     0
-                    <input type="range" id="tIndent" name="tIndent" min="0" max="10" value="0" step="1" />
+                    <input type="range" id="textIndent" name="textindent" min="0" max="10" value="0" step="1" />
                     10
 
                 </div>
